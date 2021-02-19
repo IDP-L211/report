@@ -1,0 +1,88 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[mode=buildnew]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage{subcaption}
+\usepackage{caption}
+\captionsetup{font=small}
+\captionsetup[subfigure]{width=0.9\linewidth}
+\captionsetup[figure]{width=0.8\linewidth}
+\captionsetup[table]{width=0.8\linewidth}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[nameinlink,noabbrev,capitalise]{cleveref}
+\usepackage{booktabs}
+\usepackage{tabulary}
+\usepackage{appendix}
+\usepackage{tikz}
+
+\usepackage{import}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+\fancyhead[L]{Integrated Design Project}
+\fancyhead[R]{}
+\pagestyle{fancy}
+
+\title{IDP Report}
+\author{L221}
+\date{February 2021}
+
+
+\usepackage{titling}
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{titlingpage}
+\begin{center}
+    \vspace*{4cm}
+    {\Huge\bfseries\@title}\par
+    \vspace*{2cm}
+    \Large
+    \@author\par\bigskip
+    Trinity College\par
+    \vspace*{2cm}
+    \@date
+\end{center}
+\end{titlingpage}
+}
+\makeatother
+
+
+%%--------------------------------------------------------------------------
+%% Code Highlighting
+%%--------------------------------------------------------------------------
+
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{pyorange}{RGB}{255,119,0}
+\definecolor{pyblue}{RGB}{0,0,255}
+\definecolor{pypurple}{RGB}{144,0,144}
+\definecolor{pyred}{RGB}{221,0,0}
+\definecolor{pygreen}{RGB}{0,170,0}
+\definecolor{pyblack}{RGB}{0,0,0}
+\lstdefinestyle{pystyle}{
+    commentstyle = \color{pygreen},
+    keywordstyle = \color{pyblue},
+    stringstyle = \color{pyorange},
+    basicstyle = \small\color{pyblack}\ttfamily,
+    breaklines = true, %automatic line breaking of long lines      
+    numbers = left,
+    numberstyle=\tiny,
+    showstringspaces = false,
+    stepnumber = 2,
+	xleftmargin=17pt,
+	captionpos=b
+}
+\lstset{style=pystyle,language=Python}
+
+
+%%--------------------------------------------------------------------------
+%% References
+%%--------------------------------------------------------------------------
+
+\usepackage[style=nature]{biblatex}
+% \bibliography{bibliography.bib}
