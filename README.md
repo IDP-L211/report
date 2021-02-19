@@ -11,3 +11,5 @@ Calling `ols` on itself will two-way sync with Overleaf. **Note that a merge wil
 If the local file is overwritten accidentally, just redo in your text editor. If the remote is overwtitten, have a look at _History_ on Overleaf.
 
 > When modifying a file on Overleaf and immediately syncing afterwards, the tool might not detect the changes. Please allow 1-2 minutes after modifying a file on Overleaf before syncing it to your local computer.
+
+The software flow chart can be compiled separately as a standalone, so it can be included elsewhere. To speed things up, `mode=buildnew` option on the `standalone` package means `--shell-escape` must be enabled.
