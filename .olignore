@@ -2,7 +2,7 @@
 .olauth
 .venv
 *.pdf
-/overleaf-git-tools
+ols-git-tools*
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
