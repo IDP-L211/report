@@ -1,0 +1,21 @@
+\begin{tikzpicture}[yshift=-1cm]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=startstop] (0) at (0, 0) {};
+		\node [style=decision] (1) at (0, -6) {Check counter};
+		\node [style=process] (2) at (0, -12) {Collect block};
+		\node [style=startstop] (3) at (0, -16) {End};
+		\node [style=startstop] (4) at (0, 0) {Start};
+		\node [style=none] (5) at (6, -6) {};
+		\node [style=none] (6) at (6, -16) {};
+		\node [style=none] (7) at (4, -5) {yes};
+		\node [style=none] (8) at (-1, -9.5) {no};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=arrow] (4) to (1);
+		\draw [style=arrow] (1) to (2);
+		\draw [style=arrow] (2) to (3);
+		\draw [style=arrow] (6.center) to (3);
+		\draw [style=line] (6.center) to (5.center);
+		\draw [style=line] (5.center) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}
