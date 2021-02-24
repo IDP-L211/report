@@ -27,3 +27,5 @@ Also note:
 > file on Overleaf before syncing it to your local computer.
 
 The software flow chart can be compiled separately as a standalone, so it can be included elsewhere. To speed things up, `mode=buildnew` option on the `standalone` package means `--shell-escape` must be enabled.
+
+Style files for [Tikzit](https://tikzit.github.io) are also included, see `flowchart/tikzit_example.tex` for way to compile `.tikz` files as a standalone so it can be compiled and imported into the main report the same way. Please keep 6 units around decision blocks, and 3 or 4 between other blocks. Also do not use any special characters in the names of `.tikz` files, or LaTeX will complain.

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "\\documentclass{standalone}
+\\usepackage{tikzit}
+\\input{flowchart.tikzstyles}
+\\begin{document}
+\\tikzfig{${2:-${1}}}
+\\end{document}" > "$1.tex"
