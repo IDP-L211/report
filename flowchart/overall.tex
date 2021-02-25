@@ -13,10 +13,10 @@
 
 \node (rotate) [process, below of=start] {Rotate around to decide on the closest object};
 
-\node (check_obj) [decision, below of=rotate, yshift=-1.5cm, text width=2cm] {Check if this object is another robot or wall};
+\node (check_obj) [decision, below of=rotate, yshift=-1.5cm, text width=2cm] {\small Check if this object is another robot or wall or previous target};
 
 \node (no1) [io, below of=check_obj, yshift=-2cm, text width=4cm] {Pass the target coordinate to motor controller};
-\node (yes1) [process, right of=check_obj, xshift=4cm] {Choose next cloest target};
+\node (yes1) [process, right of=check_obj, xshift=4cm] {Choose next closest target};
 
 \node (check_collision) [decision, below of=no1, yshift=-1.5cm, text width=2cm] {Check if collision imminent};
 
@@ -32,7 +32,7 @@
 
 \node (check_num) [decision, below of=collect, xshift=4cm, yshift=-2cm] {Check if block counter equals preset};
 
-\node (home) [process, below of=check_num, yshift=-2cm] {Return to starting point};
+\node (home) [io, below of=check_num, yshift=-2cm, text width=4cm] {Pass start coordinate to motor controller};
 
 \node (end) [startstop, below of=home] {End};
 
