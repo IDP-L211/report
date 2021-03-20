@@ -1,5 +1,7 @@
 # Team Optimal First Report
 
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
 This repository is connected with Overleaf through
 [moritzgloeckl/overleaf-sync](https://github.com/moritzgloeckl/overleaf-sync)
 and [eleanor-clifford/ols-git-tools](https://github.com/eleanor-clifford/ols-git-tools)
@@ -42,3 +44,14 @@ Also note (from the
 > When modifying a file on Overleaf and immediately syncing afterwards, the
 > tool might not detect the changes. Please allow 1-2 minutes after modifying a
 > file on Overleaf before syncing it to your local computer.
+
+## License
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
